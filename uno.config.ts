@@ -20,6 +20,7 @@ export default defineConfig({
 			// 透明盒子 圆角 阴影
 			'tm',
 			{
+				"padding": "1rem",
 				'background-color': 'rgba(255, 255, 255, 0)',
 				'border-radius': '0.25rem',
 				'box-shadow': '0 0 10px rgba(0, 0, 0, 0.5) '
@@ -46,6 +47,13 @@ export default defineConfig({
 					'linear-gradient(to right, rgba(1,104,138,1) 0%, rgba(75,76,157,1) 77%, rgba(75,76,157,1) 100%)',
 				filter:
 					"progid:DXImageTransform.Microsoft.gradient( startColorstr='#01688a', endColorstr='#4b4c9d', GradientType=1 )"
+			}
+		],
+		// 半透明黑色
+		[
+			'bg-black-50',
+			{
+				'background-color': 'rgba(0, 0, 0, 0.5)'
 			}
 		]
 	]
