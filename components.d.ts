@@ -15,6 +15,7 @@ declare module 'vue' {
     BoxTitle: typeof import('./src/components/boxTitle/index.vue')['default']
     CameraCoverage: typeof import('./src/components/cameraCoverage/index.vue')['default']
     CameraOverview: typeof import('./src/components/cameraOverview/index.vue')['default']
+    DianyaChart: typeof import('./src/components/dianyaChart/index.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElProgress: typeof import('element-plus/es')['ElProgress']
     ElRow: typeof import('element-plus/es')['ElRow']

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import bengChart from '@/components/bengChart/index.vue'
+import dianyaChart from '@/components/dianyaChart/index.vue'
 </script>
 
 <template>
@@ -19,8 +20,10 @@ import bengChart from '@/components/bengChart/index.vue'
 			</div>
 		</div>
 		<div class="h84vh w20vw flex flex-col">
-			<div class="h14vh tm mtl">1</div>
-			<div class="h30vh tm mtl">2</div>
+			<div class="h12vh tm mtl bg-red">1</div>
+			<div class="h30vh tm mtl">
+				<dianyaChart />
+			</div>
 			<div class="h30vh tm mtl">33</div>
 			<div class="h30vh tm mtl">4</div>
 		</div>
