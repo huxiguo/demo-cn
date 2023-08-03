@@ -12,8 +12,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@iconify-json/ep": "^1.1.11",
     "@unocss/reset": "^0.54.0",
     "echarts": "^5.4.3",
+    "element-plus": "^2.3.8",
+    "unplugin-vue-components": "^0.25.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
@@ -22,6 +25,7 @@
     "@tsconfig/node18": "^18.2.0",
     "@types/node": "^18.17.0",
     "@unocss/eslint-config": "^0.54.0",
+    "@unocss/preset-icons": "^0.54.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/eslint-config-typescript": "^11.0.3",

@@ -149,9 +149,9 @@ const infoList: InfoListIntance[] = [
 </script>
 
 <template>
-	<div>
+	<div h="100%" overflow-hidden>
 		<boxTitle :title="props.title" />
-		<div m-t-3 h55vh overflow-auto>
+		<div m-t-3 h="100%" overflow-auto>
 			<template v-for="item in infoList" :key="item.id">
 				<alarmMeaageItem :info="item" />
 			</template>

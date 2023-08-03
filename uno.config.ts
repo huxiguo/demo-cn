@@ -12,7 +12,13 @@ export default defineConfig({
 	presets: [
 		presetUno(),
 		presetAttributify(),
-		presetIcons(),
+		presetIcons({
+			extraProperties: {
+				'display': 'inline-block',
+				'vertical-align': 'text-bottom',
+				// ...
+			},
+		}),
 		presetTypography()
 	],
 	rules: [
@@ -20,7 +26,7 @@ export default defineConfig({
 			// 透明盒子 圆角 阴影
 			'tm',
 			{
-				"padding": "1rem",
+				"padding": "0.5rem",
 				'background-color': 'rgba(255, 255, 255, 0)',
 				'border-radius': '0.25rem',
 				'box-shadow': '0 0 10px rgba(0, 0, 0, 0.5) '
@@ -37,11 +43,13 @@ export default defineConfig({
 		[
 			'tag',
 			{
-				height: '2rem',
-				width: '4rem',
+				height: '1.5rem',
+				'line-height': '1.5rem',
+				'text-align': 'center',
 				'border-radius': '0.25rem',
-				padding: '0.5rem',
 				'font-size': '0.75rem',
+				'margin-top': '0.5rem',
+				'margin-bottom': '0.2rem',
 				color: '#fff',
 				background:
 					'linear-gradient(to right, rgba(1,104,138,1) 0%, rgba(75,76,157,1) 77%, rgba(75,76,157,1) 100%)',

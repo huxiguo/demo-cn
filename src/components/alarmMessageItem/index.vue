@@ -10,12 +10,12 @@ const props = defineProps<{
 </script>
 
 <template>
-	<div m-t-2 h14 flex text="#fff">
+	<div m-t-2 h16 flex text="#fff">
 		<!-- 左侧色块 -->
 		<div h="100%" w="4" bg="#11467c"></div>
 		<!-- 右侧信息 -->
 		<div m-l-4 flex flex-col justify-between w="100% ">
-			<div h="8" bg-black-50 flex justify-between p1 text="center">
+			<div h="8" flex justify-between p1 bg-black-50 text="center">
 				<div>报警{{ props.info.id }}:{{ props.info.title }}</div>
 				<div
 					v-if="props.info.type === 0"

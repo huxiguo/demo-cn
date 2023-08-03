@@ -22,9 +22,9 @@ const router = createRouter({
       component: () => import('@/views/cim.vue')
     },
     {
-      path: '/security',
-      name: 'security',
-      component: () => import('@/views/security.vue')
+      path: '/energy',
+      name: 'energy',
+      component: () => import('@/views/energy.vue')
     },
     {
       path: '/analysis',
