@@ -2,18 +2,26 @@
 // 引入 echarts
 import * as echarts from 'echarts'
 import boxTitle from '@/components/boxTitle/index.vue'
-const props = defineProps<{
-	title: string
-}>()
+
 const initChart = () => {
 	const chartDom = document.getElementById('visitorChart') as HTMLDivElement
 	const myChart = echarts.init(chartDom)
 	const options = {
+		title: {
+			text: '元/天',
+			left: '12%',
+			textStyle: {
+				color: '#4c81dd',
+				fontSize: 14,
+				// 右移10px
+				align: 'right'
+			}
+		},
 		grid: {
-			top: '10%',
+			top: '15%',
 			right: '10%',
 			left: '15%',
-			bottom: '12%'
+			bottom: '15%'
 		},
 		xAxis: [
 			{
@@ -81,7 +89,7 @@ onMounted(() => {
 
 <template>
 	<div h="100%">
-		<boxTitle :title="props.title" />
+		<boxTitle title="系统费用统计" />
 		<div class="chart-box mt2 h85%">
 			<div class="chart h100% w100%" id="visitorChart"></div>
 		</div>

@@ -7,7 +7,7 @@ const initChart = () => {
 	const options = {
 		grid: {
 			top: '10%',
-			right: '10%',
+			right: '5%',
 			left: '10%',
 			bottom: '10%'
 		},
