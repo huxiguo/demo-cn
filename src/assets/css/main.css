@@ -45,3 +45,6 @@ body::before{
 a {
   text-decoration: none;
 }
+:root {
+  --el-text-color-placeholder: #fff !important;
+}

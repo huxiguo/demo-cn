@@ -55,6 +55,9 @@ const initChart = () => {
 				textStyle: {
 					fontSize: 10
 				}
+			},
+			axisLine: {
+				show: false
 			}
 		},
 		yAxis: {

@@ -1,37 +1,15 @@
 <script setup lang="ts">
 import * as echarts from 'echarts'
 import boxTitle from '@/components/boxTitle/index.vue'
-const props = defineProps<{
-	title: string
-}>()
 const initChart = () => {
 	const chartDom = document.getElementById('alarmChart') as HTMLDivElement
 	const myChart = echarts.init(chartDom)
 	const options = {
-		title: {
-			text: '近一月报警次数',
-			left: '10%',
-			textStyle: {
-				color: '#4c81dd',
-				fontSize: 14
-			}
-		},
-		graphic: {
-			type: 'text', // 添加文本类型的图形
-			right: 40, // 文本的水平位置距离右边框的距离
-			top: 10, // 文本的垂直位置距离上边框的距离
-			style: {
-				text: '单位：次数/天', // 要显示的文字内容
-				textAlign: 'right', // 文本的对齐方式，右对齐
-				fill: '#ccc', // 文本的颜色
-				fontSize: 12 // 文本的字体大小
-			}
-		},
 		grid: {
-			top: '20%',
+			top: '10%',
 			right: '10%',
 			left: '10%',
-			bottom: '12%'
+			bottom: '10%'
 		},
 		xAxis: {
 			type: 'category',
@@ -126,7 +104,7 @@ onMounted(() => {
 
 <template>
 	<div h="100%">
-		<boxTitle :title="props.title" />
+		<boxTitle title="三相电流" />
 		<div class="chart-box mt2 h85%">
 			<div class="chart h100% w100%" id="alarmChart"></div>
 		</div>

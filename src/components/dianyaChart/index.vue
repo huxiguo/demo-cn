@@ -15,8 +15,9 @@ const initChart = () => {
 		yAxis: {
 			data: [1, 2, 3, 4, 5, 6, 7],
 			axisLine: {
+				show: false,
 				lineStyle: {
-					color: '#0177d4'
+					color: '#fff'
 				}
 			},
 			axisLabel: {
@@ -27,7 +28,7 @@ const initChart = () => {
 		xAxis: {
 			axisLine: {
 				lineStyle: {
-					color: '#0177d4'
+					color: '#fff'
 				}
 			},
 			axisLabel: {
@@ -59,18 +60,18 @@ const initChart = () => {
 							[
 								{
 									offset: 0,
-									color: '#00b0ff'
+									color: '#21abe1'
 								},
 								{
 									offset: 0.8,
-									color: '#7052f4'
+									color: '#9b58db'
 								}
 							],
 							false
 						)
 					}
 				},
-				data: [100, 150, 230, 300, 280, 180, 330]
+				data: [120, 160, 50, 125, 140, 155, 330]
 			}
 		]
 	}
