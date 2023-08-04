@@ -74,7 +74,7 @@ onMounted(() => {
 			<div flex items-center justify-around>
 				<div id="shushiDataChart" h="30" w="50"></div>
 				<div w="100%" h="100%" flex flex-col justify-center text="#fff">
-					<div class="progress h25% flex flex-col justify-around mb4">
+					<div class="progress mb4 h25% flex flex-col justify-around">
 						室内空气:32%
 						<el-progress
 							class="mt1"
